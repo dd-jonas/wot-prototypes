@@ -1,0 +1,107 @@
+/**
+ * Document
+ */
+:root {
+  --bulb-size: 3rem;
+}
+
+body {
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 80rem;
+  box-sizing: border-box;
+  background-color: #333;
+  color: #fff;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+button#start {
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  background-color: #ff0;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 2px solid #888;
+}
+
+/**
+ * Minimap
+ */
+#minimap {
+  margin: 2rem auto;
+  width: 500px;
+  height: 250px;
+  background-color: tomato;
+}
+
+/**
+ * Lightgrid
+ */
+
+.lightgrid {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(8, var(--bulb-size));
+  gap: calc(var(--bulb-size) * 2);
+  justify-content: center;
+}
+
+.bulb {
+  position: relative;
+  width: var(--bulb-size);
+  height: var(--bulb-size);
+  border-radius: var(--bulb-size);
+  border: 0.25rem solid #888;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dim-0 {
+  background-color: #ff00;
+}
+
+.dim-10 {
+  background-color: #ff01;
+}
+
+.dim-20 {
+  background-color: #ff03;
+}
+
+.dim-30 {
+  background-color: #ff04;
+}
+
+.dim-40 {
+  background-color: #ff06;
+}
+
+.dim-50 {
+  background-color: #ff07;
+}
+
+.dim-60 {
+  background-color: #ff09;
+}
+
+.dim-70 {
+  background-color: #ff0a;
+}
+
+.dim-80 {
+  background-color: #ff0c;
+}
+
+.dim-90 {
+  background-color: #ff0d;
+}
+
+.dim-100 {
+  background-color: #ff0f;
+}
