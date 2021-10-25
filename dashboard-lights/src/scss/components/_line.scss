@@ -1,0 +1,23 @@
+.points--lines {
+  /* Don't touch */
+  position: relative;
+}
+
+.line {
+  /* Don't touch */
+  position: absolute;
+  transform-origin: top left;
+}
+
+.line::after {
+  --width: 1px;
+  background-color: teal;
+
+  /* Don't touch */
+  content: '';
+  display: block;
+  position: relative;
+  top: calc(var(--width) * -0.5);
+  height: var(--width);
+  width: 100%;
+}

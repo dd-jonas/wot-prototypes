@@ -1,0 +1,25 @@
+body {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 4rem;
+  background-color: #333;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.links > a {
+  display: block;
+  padding: 1rem;
+  color: white;
+  background-color: #444;
+  box-shadow: 2px 2px 5px #0006;
+  text-decoration: none;
+}
+
+.links > a:hover {
+  background-color: #555;
+}
